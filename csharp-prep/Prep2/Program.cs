@@ -4,8 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Prep2 World!");
-
         Console.Write("What is your grade percent? ");
         string grade = Console.ReadLine();
         int gradeNumber = int.Parse(grade);
@@ -32,7 +30,8 @@ class Program
         {
             letter = "F";
         }
-        
+
+        // Stretch Requirements
 
         string sign = " ";
         int last_digit = gradeNumber % 10;
@@ -50,7 +49,7 @@ class Program
             sign = "";
         }
 
-
+        // Making sure no A+ or F-/+
         if (gradeNumber >= 93)
         {
             sign = "";
